@@ -62,8 +62,7 @@ export class EasySewa {
       product_service_charge: '0', // Static, can be dynamic
       product_code: this.product_code,
       signature: signature,
-      signed_field_names:
-        'amount,transaction_uuid,product_code,product_delivery_charge,product_service_charge,tax_amount,success_url,failure_url',
+      signed_field_names: 'total_amount,transaction_uuid,product_code',
       success_url: this.success_url,
       tax_amount: '0', // Static, can be dynamic
       total_amount: amount,
@@ -97,5 +96,3 @@ export class EasySewa {
     form.submit();
   }
 }
-
-
