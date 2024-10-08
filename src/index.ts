@@ -1,0 +1,1 @@
+export { EasySewa } from './easySewa';
