@@ -28,7 +28,7 @@ export class EasySewa {
   private failure_url: string;
 
   private urls = {
-    production: 'https://epay.esewa.com.np/api/epay/main',
+    production: 'https://epay.esewa.com.np/api/epay/main/v2/form',
     development: 'https://rc-epay.esewa.com.np/api/epay/main/v2/form',
   };
 
