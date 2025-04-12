@@ -1,6 +1,7 @@
 {
   "version": "0.0.0-development",
   "license": "MIT",
+  "name": "@prasuco/easy-sewa",
   "main": "index.js",
   "files": [
     "dist",
@@ -10,7 +11,6 @@
     "build": "tsc",
     "semantic-release": "semantic-release"
   },
-  "name": "@prasuco/easy-sewa",
   "author": "prabincankod",
   "devDependencies": {
     "@types/crypto-js": "^4.2.2",
