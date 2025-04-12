@@ -3,6 +3,7 @@
   "license": "MIT",
   "name": "@prasuco/easy-sewa",
   "main": "index.js",
+  
   "files": [
     "dist",
     "README.md"
