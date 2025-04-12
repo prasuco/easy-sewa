@@ -45,14 +45,14 @@ export class EasySewa {
     const formData: FormData = {
       amount: amount,
       failure_url: this.failure_url,
-      product_delivery_charge: product_delivery_charge ?? '0',
-      product_service_charge: product_service_charge ?? '0',
+      product_delivery_charge: product_delivery_charge ?? 0,
+      product_service_charge: product_service_charge ?? 0,
       tax_amount: tax_amount ?? '0',
       product_code: this.product_code,
       signature: signature,
       signed_field_names: 'total_amount,transaction_uuid,product_code',
       success_url: this.success_url,
-      total_amount: +(amount + (tax_amount ?? "0")),
+      total_amount: amount + (tax_amount ?? 0),
       transaction_uuid: transaction_uuid,
     };
 

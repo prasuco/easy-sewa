@@ -10,9 +10,9 @@ export interface EasySewaConfig {
 export interface PayOptions {
   amount: number;
   transaction_uuid: string;
-  product_delivery_charge?: string
-  product_service_charge?: string
-  tax_amount?: string
+  product_delivery_charge?: number
+  product_service_charge?: number
+  tax_amount?: number
 }
 
 
