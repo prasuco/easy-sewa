@@ -2,7 +2,7 @@
 
 ## Installation 
 ```bash
-npm install easy-sewa 
+npm install @prasuco/easy-sewa 
 ```
 
 ## Usage
