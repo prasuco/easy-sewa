@@ -2,21 +2,23 @@
   "version": "0.0.0-development",
   "license": "MIT",
   "name": "@prasuco/easy-sewa",
-  "main": "index.js",
-  
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist",
     "README.md"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "semantic-release": "semantic-release"
   },
   "author": "prabincankod",
   "devDependencies": {
     "@types/crypto-js": "^4.2.2",
-    "typescript": "^3.9.10",
-    "semantic-release": "^24.2.3"
+    "semantic-release": "^24.2.3",
+    "tsup": "^8.4.0",
+    "typescript": "^3.9.10"
   },
   "dependencies": {
     "crypto-js": "^4.2.0"

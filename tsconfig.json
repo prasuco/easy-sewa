@@ -1,19 +1,18 @@
+
 {
-  "include": [
-    "src",
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "moduleResolution": "node",
+      "strict": true,
+      "noImplicitAny": true,
+      "esModuleInterop": true,
+      "strictNullChecks": true,
+      "target": "ESNext",
+      "moduleResolution": "node",
+      "module": "ESNext",
+      "declaration": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "outDir": "dist"
   },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
