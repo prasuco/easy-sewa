@@ -9,7 +9,7 @@ npm install @prasuco/easy-sewa
 
 ### Importing 
 ```js 
-import { EasySewa} from 'easy-sewa';
+import { EasySewa} from '@prasuco/easy-sewa';
 ```
  
 ### Instantiating
