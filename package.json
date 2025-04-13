@@ -26,5 +26,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "https://github.com/prasuco/easy-sewa"
+  "repository": "https://github.com/prasuco/easy-sewa",
+  "homepage": "https://easy-sewa.js.org"
 }
