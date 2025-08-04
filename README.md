@@ -26,7 +26,7 @@ const easySewa = new EasySewa({
 
 ### Payment
 ```js 
-easySewa.pay({ amount: 200, transaction_uuid: "232323232323" })
+easySewa.pay({ amount: 200, transaction_uuid: "use your own uuid from uuidv4" })
 ```
 
 > This package has not been tested in production using the production merchant codes of esewa.
