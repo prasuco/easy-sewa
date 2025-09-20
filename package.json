@@ -2,15 +2,30 @@
   "version": "0.0.0-development",
   "license": "MIT",
   "name": "@prasuco/easy-sewa",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
   "files": [
     "dist",
     "README.md"
   ],
   "scripts": {
     "build": "tsup",
+    "test": "node --test simple-test.js",
+    "test:watch": "node --test --watch simple-test.js",
     "semantic-release": "semantic-release"
   },
   "author": "prabincankod",
