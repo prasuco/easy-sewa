@@ -20,7 +20,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth:
+          persist-credentials: false 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
