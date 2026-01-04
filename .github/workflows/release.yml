@@ -6,13 +6,16 @@ on:
 
 permissions:
   contents: read # for checkout
+  issues: write # to be able to comment on released issues
+  pull-requests: write # to be able to comment on released pull requests
+  id-token: write # to enable use of OIDC for trusted publishing and npm provenance
 
 jobs:
   release:
     name: Release
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
+      contents: write
       issues: write # to be able to comment on released issues
       pull-requests: write # to be able to comment on released pull requests
       id-token: write # to enable use of OIDC for trusted publishing and npm provenance
@@ -21,7 +24,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth:
-          persist-credentials: false 
+          persist-credentials: false
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
